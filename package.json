@@ -32,6 +32,8 @@
     ]
   },
   "devDependencies": {
-    "styled-components": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.0",
+    "undux": "^5.2.0"
   }
 }

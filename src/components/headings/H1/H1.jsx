@@ -1,18 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { ThemeContext } from "../../App"
 
 const H1Styled = styled.h1`
-  font-family: 'Comfortaa';
+  font-family: 'Comfortaa', cursive;
   font-weight: bold;
   font-size: 36px;
   color: ${(props) => props.color};
 `
 
 const H1 = ({ children, ...props }) => {
+    const { mode } = React.useContext(ThemeContext)
 
     return (
-        <H1Styled {...props} color={"#363B46"}>
+        <H1Styled {...props} color={mode.font}>
             {children}
         </H1Styled>
     )
