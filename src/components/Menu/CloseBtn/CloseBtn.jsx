@@ -11,6 +11,7 @@ const CloseBtnIcon = styled.button`
     outline: none;
     border: none;
     color: ${({ color }) => color};
+    cursor: pointer;
 `;
 
 const CloseBtn = ({ handleMouseDown, color }) => {

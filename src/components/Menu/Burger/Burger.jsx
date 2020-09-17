@@ -11,6 +11,7 @@ const BurgerIcon = styled.button`
     outline: none;
     border: none;
     color: ${({ color }) => color};
+    cursor: pointer;
 `;
 
 const Burger = ({ handleMouseDown, color }) => {

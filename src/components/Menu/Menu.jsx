@@ -4,6 +4,7 @@ import { TopBar, LogoPosition, IconPosition } from "./Menu.style"
 import NavLinks from "./NavLinks";
 import { ThemeContext } from "../App"
 import Burger from "./Burger";
+import { NavLink } from "react-router-dom"
 
 const Menu = () => {
     const [visibleMenu, setVisibleMenu] = React.useState(false);
@@ -15,7 +16,9 @@ const Menu = () => {
     return (
         <TopBar>
             <LogoPosition>
+                {/* <NavLink to="/"> */}
                 <Logo />
+                {/* </NavLink> */}
             </LogoPosition>
             <IconPosition>
                 <Burger handleMouseDown={toggleMenu} color={mode.font} />
