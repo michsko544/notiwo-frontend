@@ -1,3 +1,6 @@
+### Notiwo Frontend App
+## It is freelancer platform created for my BSc thesis. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
