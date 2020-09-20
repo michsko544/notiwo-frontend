@@ -17,9 +17,17 @@ export const InputStyled = styled.input`
   }
 `;
 
+InputStyled.defaultProps = {
+  color: '#363B46',
+}
+
 export const Label = styled.label`
     display:block;
     font-size: 14px;
     color: ${({ color }) => color};
     padding-bottom: 4px;
 `;
+
+Label.defaultProps = {
+  color: '#363B46',
+}

@@ -1,10 +1,10 @@
 import React from 'react'
 import Logo from "../Logo"
 import { TopBar, LogoPosition, IconPosition } from "./Menu.style"
-import NavLinks from "./NavLinks";
+import NavLinks from "./NavLinks"
+import MenuSlider from "./MenuSlider";
 import { ThemeContext } from "../App"
 import Burger from "./Burger";
-import { NavLink } from "react-router-dom"
 
 const Menu = () => {
     const [visibleMenu, setVisibleMenu] = React.useState(false);
@@ -23,7 +23,9 @@ const Menu = () => {
             <IconPosition>
                 <Burger handleMouseDown={toggleMenu} color={mode.font} />
             </IconPosition>
-            <NavLinks color={mode} visibility={visibleMenu} toggleMenu={toggleMenu} />
+            <MenuSlider color={mode} visibility={visibleMenu} toggleMenu={toggleMenu}>
+                <NavLinks />
+            </MenuSlider>
         </TopBar>
     )
 }

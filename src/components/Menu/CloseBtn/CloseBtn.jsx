@@ -12,6 +12,10 @@ const CloseBtnIcon = styled.button`
     border: none;
     color: ${({ color }) => color};
     cursor: pointer;
+
+    @media(min-width: 1024px){
+        display:none;
+    }
 `;
 
 const CloseBtn = ({ handleMouseDown, color }) => {

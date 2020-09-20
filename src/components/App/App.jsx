@@ -2,7 +2,6 @@ import React from 'react';
 import { H1, H2 } from "../headings"
 import Input from "../inputs/Input";
 import Button from "../inputs/Button";
-import Logo from "../Logo";
 import Store from "./App.store"
 import AppTheme from "./App.theme"
 import Menu from "../Menu";

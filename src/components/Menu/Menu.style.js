@@ -6,16 +6,25 @@ export const TopBar = styled.div`
   background-color: "#FBFBFB";
   top:0;
   left:0;
+
+  @media(min-width:1024px){
+    height: 100px;
+  }
 `;
 
 export const LogoPosition = styled.div`
-position: absolute;
-left:35px;
-top: 28px;
+  position: absolute;
+  left:35px;
+  top: 28px;
+
+  @media(min-width:1024px){
+    top: 38px;
+    left: 75px;
+  }
 `
 
 export const IconPosition = styled.div`
   position: absolute;
-right:17px;
-top: 29px;
+  right:17px;
+  top: 29px;
 `
