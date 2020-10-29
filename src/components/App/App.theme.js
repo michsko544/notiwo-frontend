@@ -1,6 +1,6 @@
 import React from 'react'
-import Store from './App.store'
-import ThemeContext from "./ThemeContext"
+import Store from 'store'
+import {ThemeContext} from "contexts"
 
 const AppTheme = ({ children }) => {
     const store = Store.useStore()

@@ -4,6 +4,13 @@ import './index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
+// Start the mocking conditionally.
+if (process.env.NODE_ENV === 'development') {
+  console.log("starting mockup api")
+  const { worker } = require('./mocks/browser')
+  worker.start()
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Open+Sans:wght@300;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Open+Sans:wght@300;600&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,8 +8,36 @@
   letter-spacing: 0;
 }
 
-body{
-  font-family: 'Open Sans', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  background-color: #FBFBFB ;
+  background-color: #fbfbfb;
+}
+
+body,
+#root,
+.App {
+  min-height: 100vh;
+}
+
+.contentContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+}
+
+@media (min-width: 1024px) {
+  .contentContainer {
+    padding: 0 75px;
+  }
+}
+
+.smallContentContainer {
+  max-width: 320px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

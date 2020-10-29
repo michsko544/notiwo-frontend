@@ -1,1 +1,1 @@
-export { default } from "./H1"
+export { default, TitleWrapper,H1Wrapper } from "./H1"

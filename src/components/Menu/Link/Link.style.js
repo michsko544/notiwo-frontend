@@ -1,36 +1,39 @@
-import styled from 'styled-components';
-import { DropdownStyled } from "./Dropdown"
+import styled from "styled-components/macro"
+import {Link} from "react-router-dom"
 
-const CustomLink = styled.div`
-  font-size: 14px;
-  font-family: 'Comfortaa', cursive;
+export const CustomLink = styled.div`
+  font-size: 17px;
+  font-family: "Comfortaa", cursive;
   font-weight: bold;
-  margin-bottom: 9px;
-  line-height:19px;
-  padding: 8px 0;
+  line-height: 19px;
+  white-space: nowrap;
+  cursor: pointer;
+  color: ${({color})=>color};
 
-  @media(min-width: 1024px){
+  @media (min-width: 1024px) {
+    font-size: 15px;
+    text-align: right;
     margin-bottom: 0px;
     margin-left: 75px;
-  }
-`;
-
-export const LinkStyled = styled(CustomLink)`
-  color: ${({ color }) => color};
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: inline-block;
-
-  &:hover ${DropdownStyled} {
-    display: block;
+    height: fit-content;
   }
 `
-LinkStyled.defaultProps = {
-  color: '#363B46',
-}
+
+export const RouterLink = styled(Link)`
+  color: ${({color})=>color};
+`
+
+export const LinkStyled = styled(CustomLink)`
+  display: flex;
+  flex-direction: column;
+  color: ${({color})=>color};
+`
 
 export const SpecialLink = styled(CustomLink)`
+  margin-bottom: 28px;
+`
+
+export const RouterSpecialLink = styled(Link)`
   background: linear-gradient(97.6deg, ${({ firstcolor }) => firstcolor} 0%, ${({ secondcolor }) => secondcolor} 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -39,6 +42,24 @@ export const SpecialLink = styled(CustomLink)`
 `
 
 SpecialLink.defaultProps = {
-  firstcolor: '#E42C64',
+  firstcolor: "#E42C64",
   secondcolor: "#614AD3",
 }
+
+export const LinkWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    margin-left: auto;
+  }
+`
+
+export const IconStyle = styled.div`
+  width: 19px;
+  height: 19px;
+  transition: 0.3s ease-out all;
+  margin-left: 5px;
+  transform: rotate(${({ rotate }) => (rotate==="true" ? "-180deg" : "0")});
+`

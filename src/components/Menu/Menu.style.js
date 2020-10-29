@@ -14,7 +14,7 @@ export const TopBar = styled.div`
 
 export const LogoPosition = styled.div`
   position: absolute;
-  left:35px;
+  left:32px;
   top: 28px;
 
   @media(min-width:1024px){
@@ -25,6 +25,6 @@ export const LogoPosition = styled.div`
 
 export const IconPosition = styled.div`
   position: absolute;
-  right:17px;
+  right:30px;
   top: 29px;
 `

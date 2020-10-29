@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { ThemeContext } from "../../App"
+import { ThemeContext } from "contexts"
 
 const H2Styled = styled.h2`
   font-family: 'Open Sans', sans-serif;

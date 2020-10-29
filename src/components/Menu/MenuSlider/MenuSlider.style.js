@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Link} from "react-router-dom"
 
 const handleNavPanelDisplay = (visibility) => {
     if (visibility === true) {
@@ -36,4 +37,20 @@ export const NavPanel = styled.nav`
       background-color: rgba(0,0,0,0);
       overflow:unset;
   }
+`;
+
+export const ProfileLink = styled(Link)`
+  color: ${({color})=>color.first};
+  font-size: 15px;
+  font-weight:600;
+`;
+
+export const UserShortcutWrapper = styled.div`
+    position:absolute;
+    bottom: 35px;
+    left: 25px;
+
+    @media(min-width: 1024px){
+        display: none;
+    }
 `;

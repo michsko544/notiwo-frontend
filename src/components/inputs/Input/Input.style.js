@@ -31,3 +31,11 @@ export const Label = styled.label`
 Label.defaultProps = {
   color: '#363B46',
 }
+
+export const InputWrapper = styled.div`
+  margin-bottom: 12px;
+`
+
+export const ButtonWrapper = styled.div`
+  margin-top: 31px;
+`
