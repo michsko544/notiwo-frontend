@@ -39,8 +39,8 @@ const SettingsView = () => {
           <Line mode={mode} style={{ cursor: "pointer" }} onClick={forceLogout}>
             Wyloguj się
           </Line>
+          <div style={{ content: "", padding: 8 }} />
         </Article>
-        <div style={{ content: "", padding: 8 }} />
         <Article title="Konta:">
           <EditAccountFormContainer />
         </Article>
