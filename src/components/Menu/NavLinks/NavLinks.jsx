@@ -68,7 +68,7 @@ const NavLinks = ({ handleMenuClose }) => {
     } else {
       return (
         <>
-          <Link color={mode} to="/your-orders" handleMenuClose={handleMenuClose}>
+          <Link color={mode} to="/your-orders" handleMenuClose={handleMenuClose} hideOnLarge="true">
             Twoje zamówienia
           </Link>
           <Link color={mode} to="/your-commisions" handleMenuClose={handleMenuClose}>
@@ -80,7 +80,7 @@ const NavLinks = ({ handleMenuClose }) => {
           <Link color={mode} to="/settings" handleMenuClose={handleMenuClose}>
             Ustawienia
           </Link>
-          <SpecialLink firstcolor={color.first} secondcolor={color.second} to="/add-notice" onClick={handleMenuClose}>
+          <SpecialLink firstcolor={color.first} secondcolor={color.second} to="/add-notice" onClick={handleMenuClose} hideOnLarge="true">
             Dodaj ogłoszenie
           </SpecialLink>
         </>

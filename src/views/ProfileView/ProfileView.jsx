@@ -3,6 +3,9 @@ import { CardContainer, ReviewContainer, ProfileHeaderContainer } from "containe
 import React, { useEffect } from "react"
 import { getUserNotices, getUserReviews, useFetch } from "api"
 import { ProfileViewGrid } from "./ProfileView.style"
+import { PhoneNumberContainer } from "containers"
+
+const FREELANCER = { name: "Michał Skorus", image: "", rate: { value: 3.42, quantity: 124 } }
 
 const ProfileView = ({ match }) => {
   const { response: notices, getData: getNotices } = useFetch(getUserNotices, match.params.id)
@@ -16,7 +19,7 @@ const ProfileView = ({ match }) => {
   return (
     <ProfileViewGrid>
       <div>
-        <ProfileHeaderContainer freelancer={{ name: "Michał Skorus", image: "", rate: { value: 3.42, quantity: 124 } }} />
+        <ProfileHeaderContainer freelancer={FREELANCER} />
         <Article title="O mnie:">
           Vivamus ut dolor quis nunc porta condimentum id et nisi. Fusce pretium, nulla faucibus bibendum semper, erat tellus tempus turpis, vitae
           interdum purus diam sit amet nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lacinia

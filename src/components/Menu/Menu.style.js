@@ -7,7 +7,7 @@ export const TopBar = styled.div`
   top:0;
   left:0;
 
-  @media(min-width:1024px){
+  @media(min-width:1025px){
     height: 100px;
   }
 `;
@@ -17,7 +17,7 @@ export const LogoPosition = styled.div`
   left:32px;
   top: 28px;
 
-  @media(min-width:1024px){
+  @media(min-width:1025px){
     top: 38px;
     left: 75px;
   }

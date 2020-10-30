@@ -1,5 +1,5 @@
 import OrderBox from "components/OrderBox"
-import React, { useContext } from "react"
+import React, { useContext, useState } from "react"
 import { useHistory } from "react-router-dom"
 import OrderBoxContainer from "./OrderBox"
 import RateContainer from "./Rate"
@@ -9,9 +9,10 @@ import { ReactComponent as ArrowIcon } from "images/arrow.svg"
 import { ReactComponent as ChatIcon } from "images/chat.svg"
 import Loader from "components/Loader"
 
-const OrdersContainer = ({ orders, isLoading }) => {
+const OrdersContainer = ({ orders, isLoading, handleReviewClick }) => {
   const { mode } = useContext(ThemeContext)
   const history = useHistory()
+  const [isReviewOpen, setReviewOpen] = useState(false)
 
   const handleOrderClick = (id) => {
     history.push(`/notice/${id}`)
@@ -19,10 +20,6 @@ const OrdersContainer = ({ orders, isLoading }) => {
 
   const handleButtonClick = (id) => {
     history.push(`/conversation/${id}`)
-  }
-
-  const handleReviewClick = (id) => {
-    alert("handle add review")
   }
 
   return (
@@ -50,7 +47,7 @@ const OrdersContainer = ({ orders, isLoading }) => {
                   <OrderBox.UnderBox mode={mode}>{`Oceniono na ${order.rate}`}</OrderBox.UnderBox>
                 ) : (
                   <OrderBox.UnderBox mode={mode}>
-                    <OrderBox.Button mode={mode} onClick={handleReviewClick}>
+                    <OrderBox.Button mode={mode} onClick={() => handleReviewClick(order.id)}>
                       {"Oceń zamówienie"} <ArrowIcon />
                     </OrderBox.Button>
                   </OrderBox.UnderBox>

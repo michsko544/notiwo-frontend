@@ -10,7 +10,7 @@ export const CustomLink = styled.div`
   cursor: pointer;
   color: ${({color})=>color};
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     font-size: 15px;
     text-align: right;
     margin-bottom: 0px;
@@ -27,10 +27,18 @@ export const LinkStyled = styled(CustomLink)`
   display: flex;
   flex-direction: column;
   color: ${({color})=>color};
+  
+  @media screen and (max-width: 1350px) and (min-width: 1024px){
+    display: ${({hideOnLarge})=>hideOnLarge==="true" ? "none" : "block"}
+  }
 `
 
 export const SpecialLink = styled(CustomLink)`
   margin-bottom: 28px;
+
+  @media screen and (max-width: 1600px) and (min-width: 1024px){
+    display: ${({hideOnLarge})=>hideOnLarge==="true" ? "none" : "block"}
+  }
 `
 
 export const RouterSpecialLink = styled(Link)`
@@ -51,7 +59,7 @@ export const LinkWrapper = styled.div`
   flex-direction: row;
   align-items: center;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     margin-left: auto;
   }
 `

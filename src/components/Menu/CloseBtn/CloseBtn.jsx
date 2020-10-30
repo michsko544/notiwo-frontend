@@ -13,7 +13,7 @@ const CloseBtnIcon = styled.button`
   color: ${({ color }) => color};
   cursor: pointer;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     display: none;
   }
 `

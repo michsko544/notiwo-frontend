@@ -56,7 +56,7 @@ const ReviewContainer = ({ reviews, isLoading }) => {
               {reviews.length > 0 && <Button text="Zobacz więcej" />}
             </Review>
           ) : (
-            <H2 style={{ fontWeight: 600, margin: " 50px 0", width: "fit-content" }}>Brak recenzji</H2>
+            <H2 style={{ fontWeight: 600, margin: " 50px auto", width: "fit-content" }}>Brak recenzji</H2>
           )}
         </>
       )}

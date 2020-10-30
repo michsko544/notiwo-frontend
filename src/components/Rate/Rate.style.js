@@ -8,7 +8,7 @@ export const Inner = styled.div`
   align-items: center;
 `;
 
-export const Icon = styled.img`
+export const Icon = styled.div`
   height:22px;
   color: ${({color})=>color.second};
 `;

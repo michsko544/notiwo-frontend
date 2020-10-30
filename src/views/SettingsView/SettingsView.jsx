@@ -5,7 +5,7 @@ import { EditAccountFormContainer } from "containers"
 import { Line, Switch, SwitchElement, ArticleContainer } from "./SettingsView.style"
 import { ThemeContext } from "contexts"
 import Store from "store"
-import useLogout from "store/useLogout"
+import { useLogout } from "hooks"
 
 const SettingsView = () => {
   const { mode } = useContext(ThemeContext)

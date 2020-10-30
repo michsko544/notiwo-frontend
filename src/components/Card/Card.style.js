@@ -16,6 +16,11 @@ export const Container = styled.div`
   grid-gap: 24px;
   grid-template-columns: 1fr;
 
+  @media(min-width: 768px){
+    justify-content:space-between;
+    grid-template-columns: 1fr 1fr;
+  }
+
   @media(min-width: 1024px){
     justify-content:space-between;
     grid-template-columns: 1fr 1fr 1fr;

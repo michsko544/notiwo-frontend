@@ -6,7 +6,7 @@ export const NavLinksStyled = styled.div`
   top: 120px;
   left: 26px;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     flex-direction: row;
     position: absolute;
     top: 36px;

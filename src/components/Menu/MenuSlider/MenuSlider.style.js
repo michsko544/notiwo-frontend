@@ -27,7 +27,7 @@ export const NavPanel = styled.nav`
 
   ${({ visible }) => handleNavPanelDisplay(visible)}
 
-  @media(min-width: 1024px){
+  @media(min-width: 1025px){
       min-width: fit-content;
       height: 100px;
       min-height: unset;
@@ -50,7 +50,7 @@ export const UserShortcutWrapper = styled.div`
     bottom: 35px;
     left: 25px;
 
-    @media(min-width: 1024px){
+    @media(min-width: 1025px){
         display: none;
     }
 `;

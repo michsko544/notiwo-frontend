@@ -3,7 +3,7 @@ import { createConnectedStore } from 'undux'
 export default createConnectedStore({
     authToken: 'aaa',
     mode: "light",
-    isFreelancer: true,
+    isFreelancer: false,
     userId: 0,
     user: '',
     selectedSort: 0,

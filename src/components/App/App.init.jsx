@@ -1,7 +1,7 @@
 import { useEffect, useContext } from "react"
 import Store from "store"
 import { ThemeContext } from "contexts"
-import useLogout from "store/useLogout"
+import { useLogout } from "hooks"
 import axios from "axios"
 
 const AppInit = () => {

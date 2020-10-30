@@ -4,7 +4,7 @@ import { LinkStyled, LinkWrapper, IconStyle } from "./Link.style"
 import Dropdown from "./Dropdown"
 import { RouterLink, CustomLink } from "./Link.style"
 
-const Link = ({ children, dropdown = false, color, links, to, handleMenuClose }) => {
+const Link = ({ children, dropdown = false, color, links, to, hideOnLarge, handleMenuClose }) => {
   const [isDropdownOpen, setIsDropdownOpen] = React.useState(false)
 
   const handleLinkMouseDown = () => {
@@ -14,7 +14,7 @@ const Link = ({ children, dropdown = false, color, links, to, handleMenuClose })
   const toggleDropdown = (isDropdownOpen) => setIsDropdownOpen(!isDropdownOpen)
 
   return (
-    <LinkStyled color={color.font} style={{ marginBottom: !isDropdownOpen && 28 }}>
+    <LinkStyled color={color.font} style={{ marginBottom: !isDropdownOpen && 28 }} hideOnLarge={hideOnLarge}>
       <LinkWrapper onClick={handleLinkMouseDown}>
         {!dropdown ? (
           <RouterLink onClick={handleMenuClose} to={to} color={color.font}>

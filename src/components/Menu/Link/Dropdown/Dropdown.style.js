@@ -8,7 +8,7 @@ export const DropdownStyled = styled.div`
   min-width: 156px;
   padding: 15px 8px;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     background-color: ${({ color }) => color};
     -webkit-box-shadow: 1px 2px 6px -3px rgba(0, 0, 0, 0.45);
     -moz-box-shadow: 1px 2px 6px -3px rgba(0, 0, 0, 0.45);
