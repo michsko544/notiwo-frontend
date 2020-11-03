@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import { ThemeContext } from "contexts"
 import { Label, StarRadioInputStyled } from "./StarRadioInput.style"
 import { ReactComponent as StarIcon } from "images/star.svg"
-import { useEffect } from "react"
 
 const StarRadioInput = ({ name, field, selectedValue, inputNumber, ...props }) => {
   const { mode, color } = React.useContext(ThemeContext)

@@ -37,6 +37,6 @@ Review.RateTitle = function ReviewRateTitle({ children, ...restProps }) {
   return <RateTitle {...restProps}>{children}</RateTitle>
 }
 
-Review.Icon = function ReviewIcon({ ...restProps }) {
-  return <Icon {...restProps} />
+Review.Icon = function ReviewIcon({ children, ...restProps }) {
+  return <Icon {...restProps}>{children}</Icon>
 }

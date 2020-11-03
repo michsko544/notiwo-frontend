@@ -77,7 +77,7 @@ export const RateTitle = styled.div`
     color: ${({mode})=>mode.mode};
 `;
 
-export const Icon = styled.img`
+export const Icon = styled.div`
   height:22px;
   margin-left: 5px;
   color: ${({color})=>color.second};

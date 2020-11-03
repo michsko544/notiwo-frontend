@@ -14,7 +14,7 @@ const AppTheme = ({ children }) => {
     const darkMode = {
         main: "#282B33",
         alternative: "#2F333C",
-        font: "#FFFFFF"
+        font: "#FFFFFF",
     }
 
     const modePicker = () => store.get("mode") === "light" ? lightMode : darkMode

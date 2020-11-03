@@ -5,7 +5,7 @@ import { Button } from "components/inputs"
 import { displayRate } from "utils"
 import { H2 } from "components/headings"
 import Loader from "components/Loader"
-import star from "images/star.svg"
+import { ReactComponent as StarIcon } from "images/star.svg"
 
 const ReviewContainer = ({ reviews, isLoading }) => {
   const { mode, color } = useContext(ThemeContext)
@@ -32,17 +32,23 @@ const ReviewContainer = ({ reviews, isLoading }) => {
                 <Review.Paragraph mode={mode}>{`Data recenzji: ${review.createdAt}`}</Review.Paragraph>
                 <Review.LineWithRate mode={mode}>
                   Jakość usługi:
-                  <Review.Icon color={color} src={star} alt="star-icon" />
+                  <Review.Icon color={color}>
+                    <StarIcon />
+                  </Review.Icon>
                   <Review.Subrate color={color}>{`${review.serviceQuality}/5`}</Review.Subrate>
                 </Review.LineWithRate>
                 <Review.LineWithRate mode={mode}>
                   Komunikacja:
-                  <Review.Icon color={color} src={star} alt="star-icon" />
+                  <Review.Icon color={color}>
+                    <StarIcon />
+                  </Review.Icon>
                   <Review.Subrate color={color}>{`${review.communication}/5`}</Review.Subrate>
                 </Review.LineWithRate>
                 <Review.LineWithRate mode={mode}>
                   Zgodność z opisem:
-                  <Review.Icon color={color} src={star} alt="star-icon" />
+                  <Review.Icon color={color}>
+                    <StarIcon />
+                  </Review.Icon>
                   <Review.Subrate color={color}>{`${review.compatibility}/5`}</Review.Subrate>
                 </Review.LineWithRate>
                 <Review.RateWrapper>

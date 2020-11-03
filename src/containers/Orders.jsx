@@ -1,5 +1,5 @@
 import OrderBox from "components/OrderBox"
-import React, { useContext, useState } from "react"
+import React, { useContext } from "react"
 import { useHistory } from "react-router-dom"
 import OrderBoxContainer from "./OrderBox"
 import RateContainer from "./Rate"
@@ -12,7 +12,6 @@ import Loader from "components/Loader"
 const OrdersContainer = ({ orders, isLoading, handleReviewClick }) => {
   const { mode } = useContext(ThemeContext)
   const history = useHistory()
-  const [isReviewOpen, setReviewOpen] = useState(false)
 
   const handleOrderClick = (id) => {
     history.push(`/notice/${id}`)

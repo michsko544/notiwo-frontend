@@ -3,7 +3,6 @@ import { CardContainer, ReviewContainer, ProfileHeaderContainer } from "containe
 import React, { useEffect } from "react"
 import { getUserNotices, getUserReviews, useFetch } from "api"
 import { ProfileViewGrid } from "./ProfileView.style"
-import { PhoneNumberContainer } from "containers"
 
 const FREELANCER = { name: "Michał Skorus", image: "", rate: { value: 3.42, quantity: 124 } }
 

@@ -15,6 +15,7 @@ import {
   OrdersView,
   CommisionsView,
   YourNoticesView,
+  ConversationView,
 } from "views"
 import AppInit from "./App.init"
 
@@ -53,6 +54,7 @@ const App = () => {
                   <PrivateRoute exact path="/your-notices">
                     <YourNoticesView />
                   </PrivateRoute>
+                  <PrivateRoute exact path="/conversation/:id" component={ConversationView} />
                   <Redirect to="/notices/it" />
                 </Switch>
               </div>
